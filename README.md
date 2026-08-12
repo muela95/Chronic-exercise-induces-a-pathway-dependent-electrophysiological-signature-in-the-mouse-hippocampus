@@ -11,10 +11,13 @@ analysis of laminar recordings.
 | `exercise_hippocampus_analysis.py` | Feature extraction, nested cross-validation, permutation testing and per-feature statistics |
 | `concatenar_mats_pl.py`, `concatenar_mats_LM.py`, `concatenar_mats_Schaffer.py` | Collect the recordings of a given generator into one file per group (sedentary, exercised) |
 | `union6_pl.m`, `union7.m`, `union8.m` | Merge the two group files of each generator into the single `.mat` read by the analysis script |
+| [`spatial_transcriptomics/`](spatial_transcriptomics) | Slide-seq analysis, in an independent cohort of five animals. See the README in that folder |
 
 The two assembly steps are run once per generator, before the analysis:
 the Python scripts group the recordings by condition and the MATLAB scripts
 merge them into `PL6-todo.mat`, `LM8-todo-nuevo.mat` and `Schff8-todo-nuevo.mat`.
+
+The sections below describe the electrophysiology analysis only.
 
 ## Requirements
 
